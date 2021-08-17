@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de sitio del contenido</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <link rel="icon" href="https://www.xiiber.com/favicon.png" sizes="192x192">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap" rel="stylesheet">
+
+    <style type="text/css" media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: sans-serif;
+            font-size: 10px;
+        }
+        
+        y {
+            width: 100%;
+            min-height: 100vh;
+            font-size: 1.6rem;
+            line-height: 140%;
+            opacity: 0.3;
+            opacity: 1;
+            display: grid;
+            place-items: center;
+        }
+        
+        .acc-container {
+            padding: .3rem .3rem;
+            mask-position: initial;
+        }
+        
+        .acc-btn {
+            width: 100%;
+            padding: 1.6rem 2rem;
+            font-size: 1.6rem;
+            cursor: pointer;
+            background: inherit;
+            border: none;
+            outline: none;
+            text-align: left;
+            transition: all 0.5s linear;
+        }
+        
+        .acc-btn:after {
+            content: "\271A";
+            color: #756deb;
+            float: right;
+            transition: all 0.3s linear;
+        }
+        
+        .acc-btn.is-open:after {
+            transform: rotate(90deg);
+        }
+        
+        .acc-btn:hover,
+        .acc-btn.is-open {
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .acc-btnx {
+            width: 100%;
+            padding: 1.6rem 2rem;
+            font-size: 1.6rem;
+            cursor: pointer;
+            background: inherit;
+            border: none;
+            outline: none;
+            text-align: left;
+            transition: all 0.5s linear;
+        }
+        
+        .acc-btnx:after {
+            color: #eae9f3;
+            float: right;
+            transition: all 0.3s linear;
+        }
+        
+        .acc-content {
+            max-height: 0;
+            color: rgba(0, 0, 0, 0.75);
+            font-size: 1.5rem;
+            margin: 0 2rem;
+            padding-left: 1rem;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .btn_get_two {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            background: #050505;
+            border-color: #080808;
+            color: #fff;
+        }
+        
+        .btn_get_two:hover {
+            background: transparent;
+            color: #020202;
+        }
+        
+        .new_footer_top .f_social_icon a:hover {
+            background: #000000;
+            border-color: #000000;
+            color: white;
+        }
+        
+        .new_footer_top .f_social_icon a+a {
+            margin-left: 4px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #050505;
+        }
+        
+        a:link {
+            text-decoration: none
+        }
+        
+        a:visited {
+            color: black;
+            text-decoration: none
+        }
+        
+        a:hover {
+            color: black;
+            font-family: arial;
+            text-decoration: none
+        }
+        
+        * {
+            outline: none !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="w3-container  w3-center w3-opacity w3-large w3-padding-32"><span class="w3-large w3-padding-small" style="text-align:center;color:#1a1a1a"><b>How </b>to <span style="font-family: 'Montserrat Alternates', sans-serif; font-size: 18px; color:grey; text-align: center; " class="w3-hover"> </span></b>
+        </span><br>
+        <div id="Typing-name">
+
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+            <style>
+                /*  .bodyfirma {
+                    display: grid;
+                    place-items: center;
+                    min-height: 100vh;
+                    text-align: center;
+                } */
+                
+                .type-animation {
+                    display: inline-flex;
+                    width: 0;
+                    overflow: hidden;
+                    padding-right: 0.03em;
+                    position: relative;
+                    color: rgba(0, 0, 0, 0.788);
+                }
+                
+                .type-animation:after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: -0.02em;
+                    bottom: -0.02em;
+                    width: 0.06em;
+                    border-right: 2px solid transparent;
+                }
+                
+                .type-animation.animating {
+                    -webkit-animation: type 1620ms;
+                    animation: type 1620ms;
+                    -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+                    -webkit-animation-delay: 1s;
+                    animation-delay: 1s;
+                }
+                
+                .type-animation.animating:after {
+                    -webkit-animation: cursor 320ms 8.625 ease-in-out;
+                    animation: cursor 320ms 8.625 ease-in-out;
+                }
+                
+                @-webkit-keyframes cursor {
+                    0%,
+                    100% {
+                        border-color: #f7f3ff;
+                    }
+                    50% {
+                        border-color: #241b5b;
+                    }
+                    100% {
+                        width: 0;
+                    }
+                }
+                
+                @keyframes cursor {
+                    0%,
+                    100% {
+                        border-color: #f7f3ff;
+                    }
+                    50% {
+                        border-color: #241b5b;
+                    }
+                    100% {
+                        width: 0;
+                    }
+                }
+                
+                @-webkit-keyframes type {
+                    11.1111111111% {
+                        width: 0.49em;
+                    }
+                    22.2222222222% {
+                        width: 0.98em;
+                    }
+                    33.3333333333% {
+                        width: 1.47em;
+                    }
+                    44.4444444444% {
+                        width: 1.96em;
+                    }
+                    55.5555555556% {
+                        width: 2.45em;
+                    }
+                    66.6666666667% {
+                        width: 2.94em;
+                    }
+                    77.7777777778% {
+                        width: 3.43em;
+                    }
+                    88.8888888889% {
+                        width: 3.92em;
+                    }
+                    100% {
+                        width: 3.92em;
+                        padding-right: 0;
+                    }
+                }
+                
+                @keyframes type {
+                    11.1111111111% {
+                        width: 0.49em;
+                    }
+                    22.2222222222% {
+                        width: 0.98em;
+                    }
+                    33.3333333333% {
+                        width: 1.47em;
+                    }
+                    44.4444444444% {
+                        width: 1.96em;
+                    }
+                    55.5555555556% {
+                        width: 2.45em;
+                    }
+                    66.6666666667% {
+                        width: 2.94em;
+                    }
+                    77.7777777778% {
+                        width: 3.43em;
+                    }
+                    88.8888888889% {
+                        width: 3.92em;
+                    }
+                    100% {
+                        width: 3.30em;
+                        padding-right: 0;
+                    }
+                }
+            </style>
+
+            <div class="bodyfirma">
+                <h1>Luis <span class="type-animation animating"><b>Ángel </b></span>Maciel</h1>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <ul style="    list-style-type: none;  margin: 0 2rem;
+        padding-left: 1rem;">
+            <li style="    list-style-type: none;">
+                <a href="">1</a>
+            </li>
+            <li>
+                <a href="">2</a>
+            </li>
+            <li>
+                <a href="">3</a>
+            </li><br><br></ul>
+
+        <div class="acc-container">
+
+
+
+            <button class="acc-btn">Proyectos</button>
+            <div class="acc-content">
+                <ul class="list-unstyled f_list">
+                    <li>
+                        <a href="">Xiiber</a>
+                    </li>
+                    <li>
+                        <a href="">Dragvesti</a>
+                    </li>
+                    <li>
+                        <a href="">Apps</a>
+                    </li><br><br></ul>
+            </div>
+            <button class="acc-btn">Contacto</button>
+            <div class="acc-content">
+                <ul class="list-unstyled f_list">
+                    <li><i class="fa fa-tripadvisor w3-hover-opacity w3-large " onclick="document.location='https://www.tripadvisor.com.mx/Attraction_Review-g150800-d21347352-Reviews-Xiiber-Mexico_City_Central_Mexico_and_Gulf_Coast.html' "></i></li>
+                    <li><i class="fa fa-pinterest-p w3-hover-opacity w3-large" onclick="document.location='https://www.facebook.com/cgtravel' "></i></li>
+                    <li><i class="fa fa-facebook-official w3-hover-opacity w3-large " onclick="document.location='https://www.facebook.com/cgtravel'"></i></li>
+                    <li><i class="fa fa-instagram w3-hover-opacity w3-large" onclick="document.location='https://www.instagram.com/xiibertravel/' "></i></li>
+
+                </ul><br></div>
+        </div>
+    </main>
+    <footer class=" w3-container w3-center w3-opacity w3-large w3-padding-32">
+        <ul class="w3-small  w3-center"><span style="text-align:center;color:#000000"><b>Hecho con <span class="w3-hover-opacity">❤️ </span> y mucha paciencia</b>
+            </span><br>
+            <p class="w3-small "> Diseños parte I @luisangelmaciel </p>
+            <br>
+            <i class="fa fa-instagram w3-hover-opacity w3-large" onclick="document.location='https://www.instagram.com/xiibertravel/' "></i> &nbsp;
+            <i class=" fa fa-youtube-play w3-hover-opacity  w3-large" onclick="document.location='https://www.facebook.com/cgtravel' "></i> &nbsp;
+            <i class="fa fa-twitter w3-hover-opacity w3-large" onclick="document.location='https://twitter.com/XiiberTravel' "></i> &nbsp;
+            <i class="fa fa-google w3-hover-opacity w3-large" onclick="document.location='https://www.google.com/maps/place/Xiiber/@19.3507605,-99.1486646,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1fdea83072205:0x762481276f0ce59d!8m2!3d19.3507606!4d-99.1464759' "></i>            &nbsp;
+            <i class=" w3-hover-opacity "><img src="ico_dark20x20.png " alt="Xiiber " width="21px " height="21px "></i>
+
+
+
+    </footer>
+    <script>
+        const btns = document.querySelectorAll(".acc-btn");
+        // fn
+        function accordion() {
+            // this = the btn | icon & bg changed
+            this.classList.toggle("is-open");
+            // the acc-content
+            const content = this.nextElementSibling;
+            // IF open, close | else open
+            if (content.style.maxHeight) content.style.maxHeight = null;
+            else content.style.maxHeight = content.scrollHeight + "px";
+        }
+
+        // event
+        btns.forEach((el) => el.addEventListener("click", accordion));
+    </script>
+</body>
+
+</html>
+
+<!-- 
+    Copyright © 
+-->
