@@ -43,7 +43,7 @@
     <link rel="icon" type="image/png" href="img/andoid/android-chrome-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.svg" type="image/x-icon" />
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
@@ -72,9 +72,9 @@
     </style>
     <script>
         /** IMPORTANT CONFIGURATION! 
-                                                                                                window.siteData = {
-                                                                                                    basePath: '',
-                                                                                                }; */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                window.siteData = {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    basePath: '',
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }; */
     </script>
     <script>
         (function(docElem) {
@@ -300,13 +300,146 @@
                 <div class="stage-inner">
                     <header class="stage-header">
                         <h1 class="stage-heading">
-                            <small class="stage-sub-title">We ain&#x27;t no Agency
+                            <small class="stage-sub-title">
+                                <span>
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+                                <style>
+                                    
+                                    
+                                    .type-animation {
+                                        display: inline-flex;
+                                        width: 0;
+                                        overflow: hidden;
+                                        padding-right: 0.03em;
+                                        position: relative;
+                                        color: #017dbb
+                                    }
+                                    
+                                    .type-animation:after {
+                                        content: "";
+                                        position: absolute;
+                                        right: 0;
+                                        top: -0.02em;
+                                        bottom: -0.02em;
+                                        width: 0.06em;
+                                        border-right: 2px solid transparent;
+                                    }
+                                    
+                                    .type-animation.animating {
+                                        -webkit-animation: type 1620ms;
+                                        animation: type 1620ms;
+                                        -webkit-animation-fill-mode: forwards;
+                                        animation-fill-mode: forwards;
+                                        -webkit-animation-delay: 1s;
+                                        animation-delay: 1s;
+                                    }
+                                    
+                                    .type-animation.animating:after {
+                                        -webkit-animation: cursor 320ms 8.625 ease-in-out;
+                                        animation: cursor 320ms 8.625 ease-in-out;
+                                    }
+                                    
+                                    @-webkit-keyframes cursor {
+                                        0%,
+                                        100% {
+                                            border-color: #f7f3ff;
+                                        }
+                                        50% {
+                                            border-color: #241b5b;
+                                        }
+                                        100% {
+                                            width: 0;
+                                        }
+                                    }
+                                    
+                                    @keyframes cursor {
+                                        0%,
+                                        100% {
+                                            border-color: #f7f3ff;
+                                        }
+                                        50% {
+                                            border-color: #241b5b;
+                                        }
+                                        100% {
+                                            width: 0;
+                                        }
+                                    }
+                                    
+                                    @-webkit-keyframes type {
+                                        11.1111111111% {
+                                            width: 0.49em;
+                                        }
+                                        22.2222222222% {
+                                            width: 0.98em;
+                                        }
+                                        33.3333333333% {
+                                            width: 1.47em;
+                                        }
+                                        44.4444444444% {
+                                            width: 1.96em;
+                                        }
+                                        55.5555555556% {
+                                            width: 2.45em;
+                                        }
+                                        66.6666666667% {
+                                            width: 2.94em;
+                                        }
+                                        77.7777777778% {
+                                            width: 3.43em;
+                                        }
+                                        88.8888888889% {
+                                            width: 3.92em;
+                                        }
+                                        100% {
+                                            width: 3.20em;
+                                            padding-right: 0;
+                                        }
+                                    }
+                                    
+                                    @keyframes type {
+                                        11.1111111111% {
+                                            width: 0.49em;
+                                        }
+                                        22.2222222222% {
+                                            width: 0.98em;
+                                        }
+                                        33.3333333333% {
+                                            width: 1.47em;
+                                        }
+                                        44.4444444444% {
+                                            width: 1.96em;
+                                        }
+                                        55.5555555556% {
+                                            width: 2.45em;
+                                        }
+                                        66.6666666667% {
+                                            width: 2.94em;
+                                        }
+                                        77.7777777778% {
+                                            width: 3.43em;
+                                        }
+                                        88.8888888889% {
+                                            width: 3.92em;
+                                        }
+                                        100% {
+                                            width: 3.20em;
+                                            padding-right: 0;
+                                        }
+                                    }
+                                </style>
+                            
+                           
+                            
+                                <h1  >Luis<span class="type-animation animating"><b>Ángel </b></span>Maciel</h1>
+                            </span>
+
+                                
 								<span class="u-visually-hidden">:</span>
 							</small>
-                            <span class="stage-title">Hire Us</span>
+                            <span class="stage-title">Hire me</span>
                         </h1>
                         <div class="stage-textbox">
-                            <p class="stage-text" style="color: #ffffff;">A Frontend development crew</p>
+                            <p class="stage-text" style="color: #ffffff;">Frontend development </p>
                         </div>
                         <!--<ul class="stage-list">-->
                         <!--<li class="stage-list-item is-github">-->
@@ -342,10 +475,10 @@
                             </div>
                             <div class="showcase-content">
                                 <article class="rb-leadin">
-                                    <p>We’re a small crew of experienced frontend developers that specialise in collaborating with agencies, startups and brands.</p>
+                                    <!-- evisar texto  <p>We’re a small crew of experienced frontend developers that specialise in collaborating with agencies, startups and brands.</p>
                                     <p>We like to develop engaging, responsive and accessible user interfaces using modern technology and fast maintainable code.</p>
                                     <p>To ensure that we always develop on the highest level we generally work in pairs to combine our expertise, enthusiasm and increase project availability. Hiring us means that you are always backed up by a whole crew
-                                        and not only a single person.</p>
+                                        and not only a single person.</p> -->
                                     <p>Let’s make beautiful things together.</p>
                                 </article>
                             </div>
@@ -512,12 +645,12 @@
                                 <div class="rb-sectionintro ">
                                     <div class="sectionintro-aside">
                                         <small class="sectionintro-sub">
-											<span class="sectionintro-topic">Work</span>
+											<span class="sectionintro-topic">Proyectos</span>
 										</small>
                                     </div>
                                     <div class="sectionintro-textbox">
                                         <h2 class="sectionintro-title">
-                                            Brands who use our code
+                                            Proyectos
                                         </h2>
                                     </div>
                                 </div>
@@ -527,25 +660,25 @@
                                     <ul class="itemset-list">
                                         <li class="itemset-item ">
                                             <div class="itemset-item-inner">
-                                                <img class="itemset-media lazyload" srcset="img/svg/siemens.svg" src="img/svg/siemens.svg" data-srcset="img/svg/siemens.svg" alt="Siemens" />
+                                                <img class="itemset-media lazyload" srcset="./img/svg/xiiber-travel-viajes-gay.svg" src="./img/svg/xiiber-travel-viajes-gay.svg" data-srcset="./img/svg/xiiber-travel-viajes-gay.svg" alt="Xiiber Travel | Experiencias y Viajes gay" />
                                             </div>
                                         </li>
                                         <li class="itemset-item ">
                                             <div class="itemset-item-inner">
-                                                <img class="itemset-media lazyload" srcset="img/svg/zdf.svg" src="img/svg/zdf.svg" data-srcset="img/svg/zdf.svg" alt="ZDF/ZDFMediathek" />
+                                                <img class="itemset-media lazyload" srcset="./img/svg/dragvesti-dragqueen.svg" src="./img/svg/dragvesti-dragqueen.svg" data-srcset="./img/svg/dragvesti-dragqueen.svg" alt="Dragvesti, la carrera Drag Queen Online y En vivo" />
                                             </div>
                                         </li>
                                         <li class="itemset-item ">
                                             <div class="itemset-item-inner">
-                                                <img class="itemset-media lazyload" srcset="img/svg/volkswagen.svg" src="img/svg/volkswagen.svg" data-srcset="img/svg/volkswagen.svg" alt="VolksWagen" />
-                                            </div>
-                                        </li>
-                                        <!--   <li class="itemset-item ">
-                                            <div class="itemset-item-inner">
-                                                <img class="itemset-media lazyload" srcset="img/svg/bild.svg" src="img/svg/bild.svg" data-srcset="img/svg/bild.svg" alt="Bild/Spring Verlag Mediaplayer" />
+                                                <img class="itemset-media lazyload" srcset="./img/svg/cgtravel-viajes-gay.svg" src="./img/svg/cgtravel-viajes-gay.svg" data-srcset="./img/svg/cgtravel-viajes-gay.svg" alt="CG Travel, viajes gay" />
                                             </div>
                                         </li>
                                         <li class="itemset-item ">
+                                            <div class="itemset-item-inner">
+                                                <img class="itemset-media lazyload" srcset="./img/svg/one.svg" src="./img/svg/one.svg" data-srcset="./img/svg/one.svg" alt="How to. Parte One" />
+                                            </div>
+                                        </li>
+                                        <!--  <li class="itemset-item ">
                                             <div class="itemset-item-inner">
                                                 <img class="itemset-media lazyload" srcset="img/svg/sos.svg" src="img/svg/sos.svg" data-srcset="img/svg/sos.svg" alt="SOS Kinderdorf" />
                                             </div>
@@ -554,7 +687,7 @@
                                             <div class="itemset-item-inner">
                                                 <img class="itemset-media lazyload" srcset="img/svg/dw.svg" src="img/svg/dw.svg" data-srcset="img/svg/dw.svg" alt="Detusche Welle" />
                                             </div>
-                                        </li>  -->
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -566,7 +699,7 @@
         <footer class="page-footer" itemscope itemtype="https://schema.org/WPFooter">
             <div class="page-footer-top">
                 <div class="rb-socialnav u-offset-right">
-                    <h3 class="socialnav-title">Follow us:</h3>
+                    <h3 class="socialnav-title">Follow me:</h3>
                     <ul class="socialnav-list">
                         <li class="socialnav-item  is-twitter">
                             <a class="socialnav-item-inner" aria-label="Twitter" href="https://twitter.com/luisangelmaciel">
